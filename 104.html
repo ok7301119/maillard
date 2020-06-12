@@ -3,24 +3,70 @@
 <head>
 <title>삼겹살</title>
 <meta charset="uft-8">
+<style>
+body{
+  margin:0;
+}
+ a {
+    color:black;
+    text-decoration: none;
+ }
+ #active {
+    color:red;
+  }
+ h1 {
+   font-size:50px;
+   text-align: center;
+   border-bottom:1px solid gray;
+   margin:0; padding:20px;
+ }
+ ol{
+   border-right:1px solid gray;
+   width:100px; margin:0;
+   padding:20px;
+ }
+ #grid ol{
+   padding-left: 30px;
+ }
+ #grid{
+   display: grid;
+   grid-template-columns: 150px 1fr;
+ }
+ #article{
+   padding-left: 30px;
+ }
+</style>
 </head>
 <body>
   <h1><a href="index.html">What is 마이야르?</a></h1>
+  <div id="grid">
 <ol>
   <li><a href="102.html">스테이크</a></li>
   <li><a href="103.html">치킨</a></li>
-  <li><a href="104.html">삼겹살</a></li>
+  <li><a href="104.html" id="active">삼겹살</a></li>
 </ol>
+<!--
+<h1><a href="index.html"><font color="red">What is 마이야르?</font></a></h1>
+<ol>
+<li><a href="102.html"><font color="red">스테이크</font></a></li>
+<li><a href="103.html"><font color="red">치킨</font></a></li>
+<li><a href="104.html"><font color="red">삼겹살</font></a></li>
+</ol>
+-->
+<!--
 <ul>
   <li>지현우</li>
   <li>양희수</li>
   <li>빅준현</li>
 </ul>
-<h2>삼겹살</h2>
-<p><img src="삼겹살.jpg" width="400px"></p>
-<p>돼지고기의 한 부위, 혹은 그것으로 만든 음식.
-   한국인들이 가장 즐기는 돼지고기로, 남녀노소 누구나 좋아하는 음식이기 때문에 외식이나 회식을 할 때 자주 고르게 되는 메뉴이다.
-   야외로 놀러갈 때 서양에서는 바비큐를 먹는다면 한국에서는 삼겹살을 구워먹는 경우가 많다.
-</p>
+-->
+  <div id="article">
+    <h2>삼겹살</h2>
+    <p>돼지고기의 한 부위, 혹은 그것으로 만든 음식.
+       한국인들이 가장 즐기는 돼지고기로, 남녀노소 누구나 좋아하는 음식이기 때문에 외식이나 회식을 할 때 자주 고르게 되는 메뉴이다.
+       야외로 놀러갈 때 서양에서는 바비큐를 먹는다면 한국에서는 삼겹살을 구워먹는 경우가 많다.
+    </p>
+  </div>
+</div>
 </body>
 </html>
